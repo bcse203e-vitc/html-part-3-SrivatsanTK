@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking Form</title>
+</head>
+<body>
+
+    <h2>Travel Booking Form</h2>
+
+    <form>
+
+        <!-- Full Name -->
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required><br><br>
+
+        <!-- Contact Information -->
+        <label>Contact Information:</label><br>
+        <input type="tel" name="contact" required><br><br>
+
+        <!-- Destination -->
+        <label>Destination:</label><br>
+        <select name="destination" required>
+            <option value="">--Select--</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="New York">New York</option>
+            <option value="London">London</option>
+        </select><br><br>
+
+        <!-- Travel Date -->
+        <label>Travel Date:</label><br>
+        <input type="date" name="travelDate" required><br><br>
+
+        <!-- Number of Travelers -->
+        <label>Number of Travelers:</label><br>
+        <input type="number" name="travelers" required><br><br>
+
+        <!-- Travel Class -->
+        <label>Travel Class:</label><br>
+        <input type="radio" name="class" value="Economy" required> Economy<br>
+        <input type="radio" name="class" value="Business"> Business<br>
+        <input type="radio" name="class" value="First Class"> First Class<br><br>
+
+        <!-- Travel Insurance -->
+        <input type="checkbox" name="insurance"> Add Travel Insurance<br><br>
+
+        <!-- Total Cost (manual) -->
+        <label>Total Cost:</label><br>
+        <input type="text" name="totalcost" placeholder="(fill manually)"><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Book Now">
+
+    </form>
+
+</body>
+</html>
